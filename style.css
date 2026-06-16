@@ -22,223 +22,238 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-/******       Nua.CSS was inspired by normalize.css v8.0.1       ******/
+
+/****** Nua.CSS was inspired by normalize.css v8.0.1 ******/ 
 
 /* Document v1.0 for Cache Busting
-========================================================================== */
+   ========================================================================= */
 
-/* Apply box-sizing globally for consistent layout behavior, which ensures that
-   padding and borders are included in the width and height calculations. */
-html, body, header, footer, main, section, article, aside, nav {
-  box-sizing: border-box;
+/* Apply box-sizing globally for consistent layout behavior, which ensures that padding and borders are included in the width and height calculations. */
+html,
+body,
+header,
+footer,
+main,
+section,
+article,
+aside,
+nav {
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* Added for compatibility */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* Added for compatibility */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, 'Segoe UI', Roboto, Verdana, Helvetica, Arial, sans-serif;  /* Verdana has a limited font family of weights or styles compared to other system fonts like Segoe UI or Roboto */
-  line-height: 1.15;
-  display: block;
-  min-height: 100vh;  /* Ensures the body stretches to the full viewport height, which makes "height: 100%;" redundant */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    font-family: system-ui, 'Segoe UI', Roboto, Verdana, Helvetica, Arial, sans-serif;
+    /* Verdana has a limited font family of weights or styles compared to other system fonts like Segoe UI or Roboto */
+    line-height: 1.15;
+    display: block;
+    min-height: 100vh;
+    /* Ensures the body stretches to the full viewport height, which makes "height: 100%;" redundant */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Chrome and Safari sometimes have issues with table borders, where the border-color property doesn't inherit properly from the parent element.
-   This rule ensures that the border color of the table will inherit from the color property (text color) of the parent element. */
+/* Chrome and Safari sometimes have issues with table borders, where the border-color property doesn't inherit properly from the parent element. This rule ensures that the border color of the table will inherit from the color property (text color) of the parent element. */
 table {
-  border-color: currentcolor;
+    border-color: currentcolor;
 }
 
 /* Remove the default disclosure triangle of <summary> in WebKit browsers like Apple/Safari */
 summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 /* Remove the list-style in all browsers, default marker for <summary> */
 summary {
-  list-style: none; /* Remove default list item marker */
-  display: block;   /* Change display to block to remove triangle icon */
+    list-style: none; /* Remove default list item marker */
+    display: block; /* Change display to block to remove triangle icon */
 }
 
 /* Additional styles for the <summary> element */
 summary {
-  cursor: pointer; /* Show a pointer cursor to indicate interactivity */
-  padding: 10px;   /* Add padding for better spacing */
-  background-color: #F1F1F1; /* Light gray background color for visibility */
-  border: 1px solid #CCCCCC; 
-  border-radius: 4px; 
+    cursor: pointer; /* Show a pointer cursor to indicate interactivity */
+    padding: 10px; /* Add padding for better spacing */
+    background-color: #F1F1F1; /* Light gray background color for visibility */
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
 }
 
 /* Optional: Customize the <details> element itself */
 details {
-  margin: 10px 0; /* Space between <details> elements */
-  padding: 10px;  /* Space inside the <details> */
-  background-color: #F9F9F9; /* Custom background color for <details> */
-  border: 1px solid #DDDDDD; 
-  border-radius: 4px;
+    margin: 10px 0; /* Space between <details> elements */
+    padding: 10px; /* Space inside the <details> */
+    background-color: #F9F9F9; /* Custom background color for <details> */
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
 }
 
 /* Main content of Webpage */
 main {
-  flex: 1;
-  overflow-y: auto;  /* Enable vertical scrolling in the content area */
-  padding-top: 20px; /* Adjust space below header */
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling in the content area */
+    padding-top: 20px; /* Adjust space below header */
 }
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow-x: hidden;
 }
 
 header img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  header img {
-    max-width: 50%;
-    margin: 0 auto;
-  }
+    header img {
+        max-width: 50%;
+        margin: 0 auto;
+    }
 }
 
 /* Footer section of Webpage */
 footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-top: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
 }
 
-footer p, footer a {
-  margin: 0.5rem;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #555;
+footer p,
+footer a {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
 }
 
 footer a {
-  text-decoration: none;
-  color: #005FCC;
+    text-decoration: none;
+    color: #005FCC;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 footer .social-icons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 footer .social-icons a {
-  color: #FF00FF;
-  font-size: 1.2rem;
+    color: #FF00FF;
+    font-size: 1.2rem;
 }
 
 footer .social-icons a:hover {
-  color: #DC143C;
+    color: #DC143C;
 }
 
 footer .back-to-top a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #005FCC;
-  color: #FFF;
-  text-decoration: none;
-  border-radius: 4px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #005FCC;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 footer .back-to-top a:hover {
-  background-color: #0047B3;
+    background-color: #0047B3;
 }
 
 /* Grouping content */
 hr {
-  height: 0;
-  overflow: visible;
+    height: 0;
+    overflow: visible;
 }
 
 /* Forms such as Buttons */
-button, input, optgroup, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
 
-button, select {
-  text-transform: none;
-  -webkit-appearance: button;
-  -moz-appearance: button; /* Added for compatibility */
+button,
+select {
+    text-transform: none;
+    -webkit-appearance: button;
+    -moz-appearance: button; /* Added for compatibility */
 }
 
 button::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 ::placeholder {
-  color: #757575;
-  opacity: 1;
+    color: #757575;
+    opacity: 1;
 }
 
-/* Ensures that images do not have a border (useful for older browsers that might display borders around linked images).
-   Sets images to be block-level elements, that way preventing any whitespace gaps caused by inline behavior. */
+/* Ensures that images do not have a border (useful for older browsers that might display borders around linked images). Sets images to be block-level elements, that way preventing any whitespace gaps caused by inline behavior. */
 img {
-  border-style: none;
-  display: block;
-  max-width: 100%;
-  height: auto;
+    border-style: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* WebKit-based browsers on iOS and iPadOS and Apple/Safari */
 ::-webkit-scrollbar {
-  width: 12px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+    background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
 :focus {
-  outline: 2px dashed #005fcc;
-  outline-offset: 4px;
+    outline: 2px dashed #005fcc;
+    outline-offset: 4px;
 }
 
-/* Browsers like Firefox, once "html, body, header, footer, main, section, article, aside, nav"
-   is applied at the start it is inherited by all child elements unless otherwise overridden. */
+/* Browsers like Firefox, once "html, body, header, footer, main, section, article, aside, nav" is applied at the start it is inherited by all child elements unless otherwise overridden. */
 html {
-  scrollbar-width: auto; /* Options: auto | thin | none */
-  scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
+    scrollbar-width: auto; /* Options: auto | thin | none */
+    scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
 }
+
 /*EOF*/
+
