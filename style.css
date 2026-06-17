@@ -263,6 +263,49 @@ hr {
     overflow: visible;
 }
 
+/* ==========================================================================
+   Interactive Section (Component)
+   ========================================================================== */
+
+.interactive-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 2px solid #000;
+    background: #fff;
+}
+
+.interactive-section .content {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Button row layout */
+.interactive-section .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Links styled as buttons */
+.interactive-section .download-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 2px solid #005fcc;
+    color: #005fcc;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.interactive-section .download-btn:hover {
+    background: #005fcc;
+    color: #fff;
+}
+/* ========================================================================== */
+
 /* Forms such as Buttons */
 button,
 input,
