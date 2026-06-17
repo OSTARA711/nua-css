@@ -1,6 +1,6 @@
 /* ==========================================================================
-Nua.CSS v1.0
-Lightweight CSS baseline and browser normalisation
+Nua.CSS v2.0
+Lightweight CSS reset and browser normalisation
 Inspired by normalize.css v8.0.1
 MIT Licensed
 ========================================================================== */
@@ -25,7 +25,7 @@ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 */
 
-/* Document v1.0 for cache busting
+/* Document
 ========================================================================== */
 
 /* Apply consistent box model */
@@ -36,13 +36,14 @@ height: 100%;
 line-height: 1.15;
 
 -webkit-text-size-adjust: 100%;
--ms-text-size-adjust: 100%;
 
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 
 scrollbar-width: auto;
 scrollbar-color: #888 #f1f1f1;
+
+color-scheme: light;
 }
 
 /* Inherit box-sizing */
@@ -71,6 +72,7 @@ sans-serif;
 
 font-size: 1rem;
 line-height: 1.5;
+
 text-rendering: optimizeLegibility;
 }
 
@@ -94,6 +96,7 @@ h5,
 h6 {
 margin-top: 0;
 line-height: 1.25;
+text-wrap: balance;
 }
 
 p,
@@ -102,6 +105,7 @@ ol,
 dl,
 blockquote {
 margin-top: 0;
+overflow-wrap: break-word;
 }
 
 /* Links */
@@ -136,12 +140,15 @@ border-color: currentcolor;
 img,
 picture,
 video,
-canvas,
-svg {
+canvas {
 display: block;
 max-width: 100%;
 height: auto;
 border-style: none;
+}
+
+svg {
+display: block;
 }
 
 /* Forms */
@@ -151,7 +158,6 @@ optgroup,
 select,
 textarea {
 font: inherit;
-line-height: 1.15;
 margin: 0;
 }
 
@@ -186,6 +192,11 @@ color: #757575;
 opacity: 1;
 }
 
+/* Abbreviations */
+abbr[title] {
+text-decoration: underline dotted;
+}
+
 /* Details / summary */
 summary::-webkit-details-marker {
 display: none;
@@ -204,8 +215,9 @@ outline-offset: 4px;
 
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
+
 html:focus-within {
-scroll-behaviour: auto;
+scroll-behavior: auto;
 }
 
 *,
@@ -214,8 +226,9 @@ scroll-behaviour: auto;
 animation-duration: 0.01ms !important;
 animation-iteration-count: 1 !important;
 transition-duration: 0.01ms !important;
-scroll-behaviour: auto !important;
+scroll-behavior: auto !important;
 }
+
 }
 
 /* WebKit scrollbar support */
@@ -238,8 +251,10 @@ background: #555;
 
 /* Mobile optimisation */
 @media (max-width: 768px) {
+
 body {
 line-height: 1.6;
 }
+
 }
 /* EOF */
