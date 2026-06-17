@@ -295,5 +295,38 @@ html {
     scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
 }
 
+/* ==========================================================================
+   Celtic Frame
+   ========================================================================= */
+
+.celtic-frame {
+    border: 3px solid #1d3b2a;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.celtic-frame::before,
+.celtic-frame::after {
+    content: "✦";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: #1d3b2a;
+    background: #ffffff;
+    padding: 0 0.5rem;
+}
+
+.celtic-frame::before {
+    top: -0.9rem;
+}
+
+.celtic-frame::after {
+    bottom: -0.9rem;
+}
+
 /*EOF*/
 
