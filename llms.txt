@@ -1,14 +1,49 @@
 # Nua.CSS
 
-Nua.CSS is a modern mobile-first CSS reset framework.
+> Nua.CSS is a lightweight, mobile-first CSS reset framework designed to provide consistent styling across modern web browsers while preserving useful browser defaults and optimising performance.
+
+Nua.CSS is maintained by OSTARA.WORK and distributed as free and open-source software.
+
+## Website
+
+* https://nua-css.pages.dev/
+* https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
+
+## Download
+
+* https://nua-css.pages.dev/assets/css/nua.min.css
+* https://www.npmjs.com/package/nua-css
+
+## Source Code
+
+* https://github.com/OSTARA711/nua-css
 
 ## Documentation
 
-- https://www.ostara.work/nua
-- https://nua-css.pages.dev/
-- https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
-- https://github.com/OSTARA711/nua-css
+* https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
+
+## Features
+
+* Mobile-first CSS reset
+* Cross-browser consistency
+* Simplified box model
+* Responsive image support
+* Accessibility-focused defaults
+* Lightweight and fast loading
+* Open-source development
+
+## Author
+
+* Saskia Ostermann Toutatis
+* https://ostara.work
 
 ## License MIT
 
-- https://github.com/OSTARA711/nua-css/blob/main/LICENSE
+* https://github.com/OSTARA711/nua-css/blob/main/LICENSE
+
+## Related Projects
+
+* https://github.com/OSTARA711/grad
+* https://github.com/OSTARA711/klasker
+* https://github.com/OSTARA711/kambos
+
