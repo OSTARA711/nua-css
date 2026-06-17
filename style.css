@@ -268,10 +268,10 @@ hr {
    ========================================================================== */
 
 .interactive-section {
-    max-width: 900px;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    border: 2px solid #000;
+    border: 2px solid #1d3b2a;
     background: #fff;
 }
 
