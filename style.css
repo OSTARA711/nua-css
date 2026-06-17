@@ -35,13 +35,55 @@ SOFTWARE.
     text-align: center;
 }
 
-.box {
-    border: 2px solid #000;
-    padding: 1.5rem;
-    margin: 1.5rem auto;
-    max-width: 900px;
-    background-color: #fff;
+
+/* ==========================================================================
+   Images
+   ========================================================================= */
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
 }
+
+.center-image img {
+    display: block;
+}
+
+
+/* ==========================================================================
+   Celtic Frame
+   ========================================================================= */
+
+.celtic-frame {
+    border: 3px solid #1d3b2a;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.celtic-frame::before,
+.celtic-frame::after {
+    content: "✦";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    color: #1d3b2a;
+    background: #ffffff;
+    padding: 0 0.5rem;
+}
+
+.celtic-frame::before {
+    top: -0.9rem;
+}
+
+.celtic-frame::after {
+    bottom: -0.9rem;
+}
+
 
 /* Apply box-sizing globally for consistent layout behavior, which ensures that padding and borders are included in the width and height calculations. */
 html,
@@ -75,6 +117,24 @@ body {
     /* Ensures the body stretches to the full viewport height, which makes "height: 100%;" redundant */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
+/* ==========================================================================
+   Typography
+   ========================================================================= */
+
+section p,
+section li {
+    text-align: left;
+    line-height: 1.6;
+}
+
+section h2,
+section h3,
+section h4 {
+    text-align: center;
+}
+
+/* ========================================================================= */
 
 /* Chrome and Safari sometimes have issues with table borders, where the border-color property doesn't inherit properly from the parent element. This rule ensures that the border color of the table will inherit from the color property (text color) of the parent element. */
 table {
@@ -291,39 +351,6 @@ img {
 html {
     scrollbar-width: auto; /* Options: auto | thin | none */
     scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
-}
-
-/* ==========================================================================
-   Celtic Frame
-   ========================================================================= */
-
-.celtic-frame {
-    border: 3px solid #1d3b2a;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
-    position: relative;
-    background-color: #ffffff;
-}
-
-.celtic-frame::before,
-.celtic-frame::after {
-    content: "✦";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.4rem;
-    color: #1d3b2a;
-    background: #ffffff;
-    padding: 0 0.5rem;
-}
-
-.celtic-frame::before {
-    top: -0.9rem;
-}
-
-.celtic-frame::after {
-    bottom: -0.9rem;
 }
 
 /*EOF*/
