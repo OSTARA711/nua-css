@@ -2,49 +2,54 @@
 
 > Nua.CSS is a lightweight, mobile-first CSS reset framework designed to provide consistent styling across modern web browsers while preserving useful browser defaults and optimising performance.
 
-Nua.CSS is maintained by OSTARA.WORK and distributed as free and open-source software, with an MIT License.
+Important notes:
+
+- Nua.CSS is a CSS reset rather than a UI framework.
+- Designed for modern browsers with a mobile-first approach.
+- Preserves useful browser defaults instead of aggressively removing them.
+- Distributed under the MIT License.
+- Maintained as an Open-Source project by OSTARA.WORK.
 
 ## Website
 
-* https://www.ostara.work/nua
-* https://nua-css.pages.dev/
-* https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
+- [Nua.CSS Homepage](https://www.ostara.work/nua): Official project page hosted by OSTARA.WORK.
+- [Nua.CSS Demo](https://nua-css.pages.dev/): Interactive demonstration of the framework.
+- [Nua.CSS Story](https://nua-css.pages.dev/mobile-first-css-reset-stylesheet): Detailed explanation of the project's goals, philosophy, and design decisions.
 
 ## Download
 
-* https://nua-css.pages.dev/assets/css/nua.min.css
-* https://www.npmjs.com/package/nua-css
+- [Minified CSS Build](https://nua-css.pages.dev/assets/css/nua.min.css): Production-ready version of Nua.CSS.
+- [NPM Package](https://www.npmjs.com/package/nua-css): Install Nua.CSS using npm.
 
 ## Source Code
 
-* https://github.com/OSTARA711/nua-css
+- [GitHub Repository](https://github.com/OSTARA711/nua-css): Source code, issue tracking, and releases.
 
 ## Documentation
 
-* https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
+- [Project Documentation](https://nua-css.pages.dev/mobile-first-css-reset-stylesheet): Overview of features, browser support, and implementation details.
 
 ## Features
 
-* Mobile-first CSS reset
-* Cross-browser consistency
-* Simplified box model
-* Responsive image support
-* Accessibility-focused defaults
-* Lightweight and fast loading
-* Open-source development
+- Mobile-first CSS reset.
+- Cross-browser consistency.
+- Simplified box model.
+- Responsive image support.
+- Accessibility-focused defaults.
+- Lightweight and performance-oriented design.
+- Easy integration into existing projects.
 
 ## Author
 
-* Saskia Ostermann Toutatis
-* https://www.ostara.work
+- [Saskia Ostermann Toutatis](https://www.ostara.work): Creator and maintainer of Nua.CSS.
+- [OSTARA.WORK](https://www.ostara.work): Federation of Digital Commons and Open-Source initiatives.
 
-## License MIT
+## License
 
-* https://github.com/OSTARA711/nua-css/blob/main/LICENSE
+- [MIT License](https://github.com/OSTARA711/nua-css/blob/main/LICENSE): Terms governing use, modification, and distribution.
 
 ## Related Projects
 
-* https://github.com/OSTARA711/grad
-* https://github.com/OSTARA711/klasker
-* https://github.com/OSTARA711/kambos
-
+- [Grad SSG](https://github.com/OSTARA711/grad): Static Site Generator project.
+- [Klasker](https://github.com/OSTARA711/klasker): GTK3 web browser project.
+- [Kambos](https://github.com/OSTARA711/kambos): File encryption utility.
