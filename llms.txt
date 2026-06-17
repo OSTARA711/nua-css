@@ -1,0 +1,14 @@
+# Nua.CSS
+
+Nua.CSS is a modern mobile-first CSS reset framework.
+
+## Documentation
+
+- https://www.ostara.work/nua
+- https://nua-css.pages.dev/
+- https://nua-css.pages.dev/mobile-first-css-reset-stylesheet
+- https://github.com/OSTARA711/nua-css
+
+## License MIT
+
+- https://github.com/OSTARA711/nua-css/blob/main/LICENSE
