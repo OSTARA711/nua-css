@@ -124,7 +124,7 @@ body {
 
 section p,
 section li {
-    text-align: center;
+    text-align: left;
     line-height: 1.6;
 }
 
@@ -133,6 +133,10 @@ section h3,
 section h4 {
     text-align: center;
 }
+
+div {
+  text-align: center;
+  }                       /* Very helpful to align text to center in specific paragraphs defined in HTML */ 
 
 /* ========================================================================= */
 
