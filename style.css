@@ -134,9 +134,9 @@ section h4 {
     text-align: center;
 }
 
-div {
-  text-align: center;
-  }                       /* Very helpful to align text to center in specific paragraphs defined in HTML */ 
+#center {
+        text-align: center;
+}                           /* Very helpful ID to align text to center in specific paragraphs defined in HTML */ 
 
 /* ========================================================================= */
 
