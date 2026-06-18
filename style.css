@@ -185,11 +185,13 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .logo {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -208,8 +210,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: #f8f9fa;
-    border-top: 1px solid #ddd;
+    background-color: #000;
+    border-top: 1px solid #052df5;
 }
 
 footer p,
@@ -217,7 +219,7 @@ footer a {
     margin: 0.5rem;
     font-size: 0.9rem;
     text-align: center;
-    color: #555;
+    color: #00ccff;
 }
 
 footer a {
@@ -226,6 +228,7 @@ footer a {
 }
 
 footer a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
