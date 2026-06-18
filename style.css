@@ -124,7 +124,7 @@ body {
 
 section p,
 section li {
-    text-align: left;
+    text-align: center;
     line-height: 1.6;
 }
 
@@ -223,8 +223,9 @@ footer a {
 }
 
 footer a {
+    font-weight: bold;
     text-decoration: none;
-    color: #005FCC;
+    color: #00ccff;
 }
 
 footer a:hover {
@@ -281,6 +282,10 @@ hr {
 .interactive-section .content {
     text-align: center;
     margin-bottom: 1.5rem;
+}
+
+.interactive-section p {
+    text-align: center;
 }
 
 /* Button row layout */
