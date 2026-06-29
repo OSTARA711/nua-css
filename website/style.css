@@ -271,6 +271,18 @@ hr {
     overflow: visible;
 }
 
+footer .footer-nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+footer .footer-nav a {
+    margin: 0;
+}
+
 /* ==========================================================================
    Interactive Section (Component)
    ========================================================================== */
