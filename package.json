@@ -1,0 +1,19 @@
+{
+  "name": "@ostara711/nua-css",
+  "version": "2.0.0",
+  "description": "Lightweight CSS reset and browser normalisation",
+  "author": "Saskia Ostermann Toutatis",
+  "license": "MIT",
+  "main": "dist/nua.css",
+  "style": "dist/nua.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "mkdir -p dist && cp package/nua.css dist/nua.css && npx cleancss -o dist/nua.min.css dist/nua.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
+  },
+  "keywords": []
+}
