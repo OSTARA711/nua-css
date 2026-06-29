@@ -1,7 +1,7 @@
 /*
 MIT License
 
-Copyright © 2026 Saskia Ostermann Toutatis
+Copyright © 2026 Saskia Ostermann Toutatis © OSTARA-3339 AAY 00074
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ SOFTWARE.
 
 /****** Nua.CSS was inspired by normalize.css v8.0.1 ******/ 
 
-/* Document v1.0 for Cache Busting
+/* Document v1.3 for Cache Busting
    ========================================================================= */
 
 .container {
@@ -210,7 +210,8 @@ header .container {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -419,6 +420,5 @@ html {
     scrollbar-width: auto; /* Options: auto | thin | none */
     scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
 }
-
 /*EOF*/
 
