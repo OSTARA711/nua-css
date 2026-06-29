@@ -4,16 +4,51 @@
   "description": "Lightweight CSS reset and browser normalisation",
   "author": "Saskia Ostermann Toutatis",
   "license": "MIT",
+
   "main": "dist/nua.css",
   "style": "dist/nua.css",
+
   "files": [
     "dist"
   ],
+
+  "exports": {
+    ".": {
+      "import": "./dist/nua.css",
+      "require": "./dist/nua.css"
+    },
+    "./min": "./dist/nua.min.css"
+  },
+
+  "sideEffects": [
+    "*.css"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OSTARA711/nua-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OSTARA711/nua-css/issues"
+  },
+  "homepage": "https://nua-css.pages.dev",
+
   "scripts": {
     "build": "mkdir -p dist && cp package/nua.css dist/nua.css && npx cleancss -o dist/nua.min.css dist/nua.css"
   },
+
   "devDependencies": {
     "clean-css-cli": "^5.6.3"
   },
-  "keywords": []
+
+  "keywords": [
+    "css",
+    "reset",
+    "normalize",
+    "stylesheet",
+    "nua-css",
+    "frontend",
+    "ui",
+    "browser-defaults"
+  ]
 }
